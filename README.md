@@ -8,7 +8,7 @@ This is used to build custom Raspberry Pi OS images for OreSat projects.
 
 - `default`: Holds this README as guide on how to use the repo. Shares no
   history with other branches.
-- `master`: Local copy of the `master` branch from pi-gen, used to build the
+- `arm32`: Local copy of the `master` branch from pi-gen, used to build the
   arm32 Pi OS image. Should be keep in sync with pi-gen to easily merge
   into `oresat-` branches, otherwise treated as readonly.
 - `arm64`: Local copy of the `arm64` branch from pi-gen, used to build the
@@ -21,13 +21,13 @@ This is used to build custom Raspberry Pi OS images for OreSat projects.
 
 - Each branch is used to build a specific raspi image, checkout a specific
   branch if you want to build that image.
-- Only merge `master` or `arm64` into an `oresat-` branch other do not merge
+- Only merge `arm32` or `arm64` into an `oresat-` branch other do not merge
   branches together.
 - On `oresat-*` branches, only add to stageX directories, changing the
   `README.md`, `scripts/`, etc will problaby cause merge conficts in the
-  future when the latest versions of master or `arm64` are `merged` into those
+  future when the latest versions of `arm32` or `arm64` are `merged` into those
   branches.
-- See the `README.md` in `master` branch for explinaton of the pi-gen build
+- See the `README.md` in `arm32` branch for explinaton of the pi-gen build
   process and stage system.
 
 ## Build a Custom OreSat image
